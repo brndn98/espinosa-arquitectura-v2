@@ -2,6 +2,7 @@
 
     if(isset($_POST['submit'])){
 
+        $page = $_GET['page'];
         $name = $_POST['name'];
         $mailFrom = $_POST['email'];
         $subject = $_POST['subject'];
@@ -9,14 +10,14 @@
 
         if(empty($name) || empty($mailFrom) || empty($subject) || empty($message)){
 
-            header('Location: ../index.php?contact=empty');
+            header('Location: ../' . $page . '?contact=empty');
             exit();
 
         } else {
 
             if(!filter_var($mailFrom, FILTER_VALIDATE_EMAIL)){
 
-                header('Location: ../index.php?contact=invalidEmail');
+                header('Location: ../' . $page . '?contact=invalidEmail');
                 exit();
 
             } else {
@@ -28,12 +29,12 @@
 
                 if(mail($mailTo, $finalSubject, $text, $header)){
 
-                    header('Location: ../index.php?contact=emailSend');
+                    header('Location: ../' . $page . '?contact=emailSend');
                     die();
 
                 } else {
 
-                    header('Location: ../index.php?contact=emailFailed');
+                    header('Location: ../' . $page . '?contact=emailFailed');
                     die();
 
                 }

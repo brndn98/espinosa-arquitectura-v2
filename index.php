@@ -21,9 +21,9 @@
                 <img src="images/logo/logo_720x720.png" id="navbar-logo-img">
             </div>
             <div class="navbar-menu">
-                <a href="index.html">INICIO</a>
-                <a href="index.html">NOSOTROS</a>
-                <a href="index.html">GALERIA</a>
+                <a href="index.php">INICIO</a>
+                <a href="servicios.php">SERVICIOS</a>
+                <a href="index.php">NOSOTROS</a>
                 <a id="nav-contact">CONTACTO</a>
             </div>
 
@@ -133,7 +133,7 @@
                 <h1>CONTACTANOS</h1>
                 <p>envíenos un correo</p>
 
-                <form action="php/contact.php" method="post" class="contact-form">
+                <form action="php/test.php?page=index.php" method="post" class="contact-form">
 
                     <p>nombre</p>
                     <input type="text" name="name" id="contact-name" class="contact-input form-input" placeholder="Escriba su nombre">
@@ -155,7 +155,8 @@
 
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/contact.js"></script>
 
 </body>
 </html>
