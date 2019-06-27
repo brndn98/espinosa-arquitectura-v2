@@ -38,7 +38,7 @@
             </div>
 
             <div class="services-presentation">
-                <img src="images/services/loaded/services_03.jpg" class="services-img slide-img-blur">
+                <img src="images/services/unloaded/services_03.jpg" class="services-img slide-img-blur">
                 <div class="presentation-info">
                     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                     <p>
@@ -47,32 +47,32 @@
                 </div>
             </div>
 
-            <div class="construction-br"></div>
+            <div class="construction-br services-img slide-img-blur"></div>
 
             <div class="services-construction">
-                <div class="construction-img services-img slide-img-blur" style="background-image: url(images/services/loaded/services_02.jpg); grid-area: con1;"></div>
-                <div class="construction-img services-img slide-img-blur" style="background-image: url(images/services/loaded/services_10.jpg); grid-area: con2;"></div>
-                <div class="construction-img services-img slide-img-blur" style="background-image: url(images/services/loaded/services_11.jpg); grid-area: con3;"></div>
+                <div class="construction-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_02.jpg); grid-area: con1;"></div>
+                <div class="construction-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_10.jpg); grid-area: con2;"></div>
+                <div class="construction-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_11.jpg); grid-area: con3;"></div>
                 <div class="construction-info">
                     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum risus erat, eu tincidunt odio gravida sit amet. Cras arcu tellus, aliquet nec tortor vel, varius bibendum tortor.</p>
                 </div>
-                <div class="construction-img services-img slide-img-blur" style="background-image: url(images/services/loaded/services_12.jpg); grid-area: con4;"></div>
+                <div class="construction-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_12.jpg); grid-area: con4;"></div>
             </div>
 
             <div class="architecture-br services-img slide-img-blur"></div>
 
             <div class="services-architecture">
-                <div class="architecture-img services-img slide-img-blur" style="background-image: url(images/services/loaded/services_00.jpg); grid-area: arc1;"></div>
-                <div class="architecture-img services-img slide-img-blur" style="background-image: url(images/services/loaded/services_08.jpg); grid-area: arc2;"></div>
+                <div class="architecture-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_00.jpg); grid-area: arc1;"></div>
+                <div class="architecture-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_08.jpg); grid-area: arc2;"></div>
                 <div class="architecture-info">
                     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum risus erat, eu tincidunt odio gravida sit amet. Cras arcu tellus, aliquet nec tortor vel, varius bibendum tortor.</p>
                 </div>
-                <div class="architecture-img services-img slide-img-blur" style="background-image: url(images/services/loaded/services_01.jpg); grid-area: arc3;"></div>
+                <div class="architecture-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_01.jpg); grid-area: arc3;"></div>
             </div>
 
-            <div class="services-br"></div>
+            <div class="services-br services-img slide-img-blur"></div>
 
         </div>
 
