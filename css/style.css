@@ -5,7 +5,9 @@
 
     --black-transparent: rgba(28, 28, 28, 0.3);
     --black-contact: rgba(28, 28, 28, 0.98);
+    --black-profile-hover: rgba(28, 28, 28, 0.8);
     --black-color: #1c1c1c;
+    --black-profile: #3f3f3f;
     --white-color: #d6d6d6;
     --gray-color: #8a8a8a;
     --white-background: #e9e9e9;
@@ -1015,6 +1017,114 @@ body{
     .services-br{
         margin-top: 10%;
         height: 40vh;
+    }
+
+    /*++++++++++++++++++++++++++++++++++++++++++++*/
+    /*++++++++++++ N O S O T R O S +++++++++++++++*/
+    /*++++++++++++++++++++++++++++++++++++++++++++*/
+
+    .aboutus-wrapper{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .aboutus-header{
+        width: 100%;
+        height: 45vh;
+        /*background-image: url(../images/slider/loaded/slider_loaded_1.jpg);*/
+        background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/slider/loaded/slider_loaded_1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutus-header h1{
+        font-family: var(--navbar-text);
+        font-size: 2.5em;
+        font-weight: 300;
+        color: var(--black-color);
+        border-bottom: 2px solid var(--black-color);
+    }
+
+    .aboutus-content{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--black-color);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.5s;
+    }
+    .aboutus-profile{
+        margin: 0 5% 0 5%;
+        width: 20%;
+        height: 80%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        background-color: var(--black-profile);
+        border-radius: 5px;
+        padding: 1%;
+        transition: 0.5s;
+    }
+    .aboutus-profile > *{
+        margin-top: 5%;
+    }
+    .aboutus-profile i{
+        width: 10%;
+        color: var(--white-color);
+    }
+    .aboutus-profile p{
+        width: 90%;
+        font-family: var(--navbar-text);
+        font-size: 1em;
+        font-weight: 400;
+        color: var(--white-color);
+    }
+    .aboutus-profile:hover{
+        background-color: var(--black-profile-hover);
+        transform: scale(1.015);
+    }
+    /*.aboutus-profile:hover .profile-info{
+        color: var(--black-color);
+    }*/
+
+    .profile-img{
+        width: 80%;
+        height: 40%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+    }
+
+    .aboutus-profile h1{
+        font-family: var(--slider-text);
+        font-size: 2em;
+        font-weight: 400;
+        color: var(--white-color);
+    }
+
+    .profile-email, .profile-phone, .profile-fb{
+        width: 90%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    .aboutus-br{
+        width: 100%;
+        height: 40vh;
+        background-image: url(../images/slider/loaded/slider_loaded_2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
     }
 
     /*++++++++++++++++++++++++++++++++++++++++++++*/

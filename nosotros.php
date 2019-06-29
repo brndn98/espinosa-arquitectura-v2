@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Servicios</title>
+    <title>Nosotros</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,700,700i|PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -23,56 +23,63 @@
             <div class="navbar-menu">
                 <a href="index.php">INICIO</a>
                 <a href="servicios.php">SERVICIOS</a>
-                <a href="index.php">NOSOTROS</a>
+                <a href="nosotros.php">NOSOTROS</a>
                 <a id="nav-contact">CONTACTO</a>
             </div>
 
         </nav>
 
-        <div class="services-wrapper">
+        <div class="aboutus-wrapper">
 
-            <div class="services-header services-img slide-img-blur">
-                <h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum risus erat, eu tincidunt odio gravida sit amet. Cras arcu tellus, aliquet nec tortor vel, varius bibendum tortor.
-                </h1>
+            <div class="aboutus-header">
+                <h1>ACERCA DE NOSOTROS</h1>
             </div>
 
-            <div class="services-presentation">
-                <img src="images/services/unloaded/services_03.jpg" class="services-img slide-img-blur">
-                <div class="presentation-info">
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum risus erat, eu tincidunt odio gravida sit amet. Cras arcu tellus, aliquet nec tortor vel, varius bibendum tortor. Cras facilisis dapibus iaculis. Nulla nec quam eget dui iaculis accumsan. Nam ultrices nibh at ante tincidunt, vitae varius magna suscipit. Curabitur luctus bibendum augue eu sodales. Fusce efficitur eros suscipit accumsan malesuada. Mauris tempus lorem tortor. Donec auctor nisi orci, sed fringilla velit aliquet dictum. Aliquam.
-                    </p>
+            <div class="aboutus-content" id="aboutus-content-id">
+            
+                <div class="aboutus-profile" onmouseover="setContainerImage('images/aboutus/aboutus_02.jpg')" onmouseout="quitContainerImage()">
+                
+                    <div class="profile-img" style="background-image: url(images/placeholder/profile_placeholder.png);"></div>
+                    <h1 class="profile-info">Héctor Espinosa</h1>
+                    <br>
+                    <div class="profile-email">
+                        <i class="fas fa-envelope profile-info"></i>
+                        <p class="profile-info">correo@ejemplo.com</p>
+                    </div>
+                    <div class="profile-phone">
+                        <i class="fas fa-phone profile-info"></i>
+                        <p class="profile-info">0180808080</p>
+                    </div>
+                    <div class="profile-fb">
+                        <i class="fab fa-facebook-square profile-info"></i>
+                        <p class="profile-info">facebook.com/usuario</p>
+                    </div>
+
                 </div>
-            </div>
 
-            <div class="construction-br services-img slide-img-blur"></div>
+                <div class="aboutus-profile" onmouseover="setContainerImage('images/aboutus/aboutus_01.jpg')" onmouseout="quitContainerImage()">
+                
+                    <div class="profile-img" style="background-image: url(images/placeholder/profile_placeholder.png);"></div>
+                    <h1 class="profile-info">Orlando Espinosa</h1>
+                    <br>
+                    <div class="profile-email">
+                        <i class="fas fa-envelope profile-info"></i>
+                        <p class="profile-info">correo@ejemplo.com</p>
+                    </div>
+                    <div class="profile-phone">
+                        <i class="fas fa-phone profile-info"></i>
+                        <p class="profile-info">0180808080</p>
+                    </div>
+                    <div class="profile-fb">
+                        <i class="fab fa-facebook-square profile-info"></i>
+                        <p class="profile-info">facebook.com/usuario</p>
+                    </div>
 
-            <div class="services-construction">
-                <div class="construction-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_02.jpg); grid-area: con1;"></div>
-                <div class="construction-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_10.jpg); grid-area: con2;"></div>
-                <div class="construction-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_11.jpg); grid-area: con3;"></div>
-                <div class="construction-info">
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum risus erat, eu tincidunt odio gravida sit amet. Cras arcu tellus, aliquet nec tortor vel, varius bibendum tortor.</p>
                 </div>
-                <div class="construction-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_12.jpg); grid-area: con4;"></div>
+
             </div>
 
-            <div class="architecture-br services-img slide-img-blur"></div>
-
-            <div class="services-architecture">
-                <div class="architecture-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_00.jpg); grid-area: arc1;"></div>
-                <div class="architecture-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_08.jpg); grid-area: arc2;"></div>
-                <div class="architecture-info">
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum risus erat, eu tincidunt odio gravida sit amet. Cras arcu tellus, aliquet nec tortor vel, varius bibendum tortor.</p>
-                </div>
-                <div class="architecture-img services-img slide-img-blur" style="background-image: url(images/services/unloaded/services_01.jpg); grid-area: arc3;"></div>
-            </div>
-
-            <div class="services-br services-img slide-img-blur"></div>
+            <div class="aboutus-br"></div>
 
         </div>
 
@@ -122,7 +129,7 @@
                 <h1>CONTACTANOS</h1>
                 <p>envíenos un correo</p>
 
-                <form action="php/test.php?page=servicios.php" method="post" class="contact-form">
+                <form action="php/test.php?page=nosotros.php" method="post" class="contact-form">
 
                     <p>nombre</p>
                     <input type="text" name="name" id="contact-name" class="contact-input form-input" placeholder="Escriba su nombre">
@@ -145,7 +152,7 @@
     </div>
 
     <script src="js/contact.js"></script>
-    <script src="js/services.js"></script>
+    <script src="js/aboutus.js"></script>
 
 </body>
 </html>
