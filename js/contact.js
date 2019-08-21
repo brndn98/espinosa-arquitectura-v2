@@ -26,7 +26,7 @@ disableInputs(); //enter the function to disable all the input fields
 
 /////////////// C O N T A C T   D I A L O G ////////////////
 
-navContact.onclick = function () { //function for showing the contact dialog
+function openContact() { //function for showing the contact dialog
 
     //enable every input field
     inputName.disabled = false;

@@ -21,7 +21,7 @@ sliderSlides.style.transform = "translateX(" + (-sliderSize * sliderCounter) + "
 //sets top padding for third image since relevant part from image is missing, here it affects both the actual image and the clone at the start
 //slideImage[0].style.paddingTop = "15%";
 //slideImage[3].style.paddingTop = "15%";
-sliderDots[0].style.opacity = "0.50"; //sets the first dot as active
+sliderDots[0].style.opacity = "0.75"; //sets the first dot as active
 
 
 /////////////// S L I D E S ////////////////
@@ -69,9 +69,9 @@ sliderSlides.addEventListener('transitionend', () => { //function for cycling th
 function sliderActualDot() { //function for placing the active slide corresponding dot
 
     for (var i = 0; i < sliderDots.length; i++) { //for every dot in the slider
-        sliderDots[i].style.opacity = "0.25"; //turn the opacity down
+        sliderDots[i].style.opacity = "0.50"; //turn the opacity down
     }
-    sliderDots[sliderCounter - 1].style.opacity = "0.50"; //turn opacity up to the active slide corresponding dot
+    sliderDots[sliderCounter - 1].style.opacity = "0.75"; //turn opacity up to the active slide corresponding dot
     //it subtract 1 since the valid slides start at 1, and the dots start at 0
 
 }
@@ -90,7 +90,7 @@ sliderDots.forEach((dot, dotIndex) => { //function for making dots clickable
 
 function slideInfoShow(infoSlide) { //function for showing the information dialog when on handheld devices
 
-    if (document.body.clientWidth < 1000) { //when the screen width is less than 1000px
+    if (document.body.clientWidth < 1025) { //when the screen width is less than 1000px
 
         if (slideInfoFlag) { //if the flag is set to true, hence the dialog is active, then enter
             infoSlide.style.opacity = "0"; //the dialog disappears
@@ -121,17 +121,23 @@ function slideInfoHide() { //function for hiding the information dialog when on 
 
 
 var loadedImages = [ //array with high quality images for the slides
-    "images/slider/loaded/slider_loaded_3.jpg",
-    "images/slider/loaded/slider_loaded_1.jpg",
-    "images/slider/loaded/slider_loaded_2.jpg",
-    "images/slider/loaded/slider_loaded_3.jpg",
-    "images/slider/loaded/slider_loaded_1.jpg"
+    "images/slider/loaded/closeup_2019-04-14.jpg",
+    "images/slider/loaded/casa_rios.jpg",
+    "images/slider/loaded/casa_elizondo.jpg",
+    "images/slider/loaded/closeup_2019-04-14.jpg",
+    "images/slider/loaded/casa_rios.jpg"
 ];
 
 setTimeout(function () { //function for the loading of images when page is loaded
     for (var i = 0; i < slideImage.length; i++) { //for every image
         slideImage[i].src = loadedImages[i]; //set the source of the image in every slide to the corresponding one on the array
-        slideImage[i].classList.remove("slide-img-blur"); //remove the blur class from the original image
+        //slideImage[i].classList.remove("slide-img-blur"); //remove the blur class from the original image
         slideImage[i].classList.add("slide-img-noblur");
     }
 });
+
+if (document.body.clientWidth < 1025) {
+    slideImage[1].style.transform = "translateY(0)";
+    slideImage[2].style.transform = "translateY(0)";
+    slideImage[4].style.transform = "translateY(0)";
+}

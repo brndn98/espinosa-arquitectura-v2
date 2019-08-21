@@ -23,8 +23,8 @@
             <div class="navbar-menu">
                 <a href="index.php">INICIO</a>
                 <a href="servicios.php">SERVICIOS</a>
-                <a href="index.php">NOSOTROS</a>
-                <a id="nav-contact">CONTACTO</a>
+                <a href="nosotros.php">NOSOTROS</a>
+                <a id="nav-contact" onclick="openContact()">CONTACTO</a>
             </div>
 
         </nav>
@@ -39,40 +39,40 @@
                 <div class="slider-slide">
 
                     <div class="slide" id="lastSlideClone">
-                        <img src="images/slider/unloaded/slider_lazy_img_3.jpg" class="slide-img slide-img-blur">
+                        <img src="images/slider/unloaded/closeup_2019-04-14.jpg" class="slide-img" alt="Close Up">
                     </div>
                     <div class="slide">
-                        <img src="images/slider/unloaded/slider_lazy_img_1.jpg" class="slide-img slide-img-blur">
+                        <img src="images/slider/unloaded/casa_rios.jpg" class="slide-img" alt="Casa Rios" style="transform: translateY(-18%)">
                         <div class="slide-info" onclick="slideInfoShow(this)">
                             <h1 class="slide-info-header">Slide Title 1</h1>
                             <p class="slide-info-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ex odio, sodales eu maximus at, viverra vitae turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tincidunt, neque non cursus lobortis, sem augue porttitor enim, nec lobortis nulla nisi at arcu. Vivamus eget euismod sem, vel consequat tellus. Praesent et turpis mauris. Duis sit.
                             </p>
                         </div>
-                        <div class="noScroll"></div>
+                        <!--<div class="noScroll"></div>-->
                     </div>
                     <div class="slide">
-                        <img src="images/slider/unloaded/slider_lazy_img_2.jpg" class="slide-img slide-img-blur">
+                        <img src="images/slider/unloaded/casa_elizondo.jpg" class="slide-img" alt="Casa Elizondo" style="transform: translateY(-15%)">
                         <div class="slide-info" onclick="slideInfoShow(this)">
                             <h1 class="slide-info-header">Slide Title 2</h1>
                             <p class="slide-info-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum risus erat, eu tincidunt odio gravida sit amet. Cras arcu tellus, aliquet nec tortor vel, varius bibendum tortor. Cras facilisis dapibus iaculis. Nulla nec quam eget dui iaculis accumsan. Nam ultrices nibh at ante tincidunt, vitae varius magna suscipit. Curabitur luctus bibendum augue eu sodales. Fusce efficitur eros suscipit accumsan malesuada. Mauris tempus lorem tortor. Donec auctor nisi orci, sed fringilla velit aliquet dictum. Aliquam.
                             </p>
                         </div>
-                        <div class="noScroll"></div>
+                        <!--<div class="noScroll"></div>-->
                     </div>
                     <div class="slide">
-                        <img src="images/slider/unloaded/slider_lazy_img_3.jpg" class="slide-img slide-img-blur">
+                        <img src="images/slider/unloaded/closeup_2019-04-14.jpg" class="slide-img" alt="Close Up">
                         <div class="slide-info" onclick="slideInfoShow(this)">
                             <h1 class="slide-info-header">Slide Title 3</h1>
                             <p class="slide-info-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices ipsum odio, nec ultricies tortor fermentum ac. Donec at libero vitae tellus sagittis tempus. Duis tincidunt augue massa, nec pulvinar augue viverra vel. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer aliquet eros felis, vitae suscipit enim.
                             </p>
                         </div>
-                        <div class="noScroll"></div>
+                        <!--<div class="noScroll"></div>-->
                     </div>
                     <div class="slide" id="firstSlideClone">
-                        <img src="images/slider/unloaded/slider_lazy_img_1.jpg" class="slide-img slide-img-blur">
+                        <img src="images/slider/unloaded/casa_rios.jpg" class="slide-img" alt="Casa Elizondo" style="transform: translateY(-18%)">
                     </div>
 
                 </div>
@@ -90,9 +90,9 @@
         <footer class="footer">
 
             <div class="footer-content">
-                <p>cel: (52) 1 55 1302 1187 &nbsp;&nbsp;&nbsp;&nbsp; cel: (52) 81 8272 4092</p>
-                <!--<p>cel: (52) 81 8272 4092</p>-->
+                <!--<p>cel: (52) 1 55 1302 1187 &nbsp;&nbsp;&nbsp;&nbsp; cel: (52) 81 8272 4092</p>-->
                 <p>correo: contacto@espinosa-arquitectura.com</p>
+                <p style="font-weight: 400">Copyright &copy <?php echo date("Y"); ?> Espinosa Arquitectura</p>
             </div>
 
         </footer>
@@ -155,8 +155,8 @@
 
     </div>
 
-    <script src="js/slider.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="js/slider.js?v=<?php echo time(); ?>"></script>
+    <script src="js/contact.js?v=<?php echo time(); ?>"></script>
 
 </body>
 </html>
