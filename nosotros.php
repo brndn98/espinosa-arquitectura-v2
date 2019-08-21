@@ -24,7 +24,7 @@
             <div class="navbar-menu">
                 <a href="index.php">INICIO</a>
                 <a href="servicios.php">SERVICIOS</a>
-                <a href="nosotros.php">NOSOTROS</a>
+                <a href="nosotros.php" style="opacity: 1">NOSOTROS</a>
                 <a id="nav-contact" onclick="openContact()">CONTACTO</a>
             </div>
 

@@ -15,13 +15,13 @@
     
     <div class="wrapper">
 
-        <nav class="navbar">
+        <nav class="navbar navbar-top">
 
             <div class="navbar-logo">
                 <img src="images/logo/logo_720x720.png" id="navbar-logo-img">
             </div>
             <div class="navbar-menu">
-                <a href="index.php">INICIO</a>
+                <a href="index.php" style="opacity: 1">INICIO</a>
                 <a href="servicios.php">SERVICIOS</a>
                 <a href="nosotros.php">NOSOTROS</a>
                 <a id="nav-contact" onclick="openContact()">CONTACTO</a>
@@ -39,40 +39,40 @@
                 <div class="slider-slide">
 
                     <div class="slide" id="lastSlideClone">
-                        <img src="images/slider/unloaded/closeup_2019-04-14.jpg" class="slide-img" alt="Close Up">
+                        <img src="images/slider/loaded/closeup_2019-04-14.jpg" class="slide-img" alt="Close Up">
                     </div>
                     <div class="slide">
-                        <img src="images/slider/unloaded/casa_rios.jpg" class="slide-img" alt="Casa Rios" style="transform: translateY(-18%)">
+                        <img src="images/slider/loaded/casa_rios.jpg" class="slide-img" alt="Casa Rios">
                         <div class="slide-info" onclick="slideInfoShow(this)">
                             <h1 class="slide-info-header">Slide Title 1</h1>
                             <p class="slide-info-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ex odio, sodales eu maximus at, viverra vitae turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tincidunt, neque non cursus lobortis, sem augue porttitor enim, nec lobortis nulla nisi at arcu. Vivamus eget euismod sem, vel consequat tellus. Praesent et turpis mauris. Duis sit.
                             </p>
                         </div>
-                        <!--<div class="noScroll"></div>-->
+                        
                     </div>
                     <div class="slide">
-                        <img src="images/slider/unloaded/casa_elizondo.jpg" class="slide-img" alt="Casa Elizondo" style="transform: translateY(-15%)">
+                        <img src="images/slider/loaded/casa_elizondo.jpg" class="slide-img" alt="Casa Elizondo">
                         <div class="slide-info" onclick="slideInfoShow(this)">
                             <h1 class="slide-info-header">Slide Title 2</h1>
                             <p class="slide-info-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum risus erat, eu tincidunt odio gravida sit amet. Cras arcu tellus, aliquet nec tortor vel, varius bibendum tortor. Cras facilisis dapibus iaculis. Nulla nec quam eget dui iaculis accumsan. Nam ultrices nibh at ante tincidunt, vitae varius magna suscipit. Curabitur luctus bibendum augue eu sodales. Fusce efficitur eros suscipit accumsan malesuada. Mauris tempus lorem tortor. Donec auctor nisi orci, sed fringilla velit aliquet dictum. Aliquam.
                             </p>
                         </div>
-                        <!--<div class="noScroll"></div>-->
+                        
                     </div>
                     <div class="slide">
-                        <img src="images/slider/unloaded/closeup_2019-04-14.jpg" class="slide-img" alt="Close Up">
+                        <img src="images/slider/loaded/closeup_2019-04-14.jpg" class="slide-img" alt="Close Up">
                         <div class="slide-info" onclick="slideInfoShow(this)">
                             <h1 class="slide-info-header">Slide Title 3</h1>
                             <p class="slide-info-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices ipsum odio, nec ultricies tortor fermentum ac. Donec at libero vitae tellus sagittis tempus. Duis tincidunt augue massa, nec pulvinar augue viverra vel. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer aliquet eros felis, vitae suscipit enim.
                             </p>
                         </div>
-                        <!--<div class="noScroll"></div>-->
+                        
                     </div>
                     <div class="slide" id="firstSlideClone">
-                        <img src="images/slider/unloaded/casa_rios.jpg" class="slide-img" alt="Casa Elizondo" style="transform: translateY(-18%)">
+                        <img src="images/slider/loaded/casa_rios.jpg" class="slide-img" alt="Casa Elizondo">
                     </div>
 
                 </div>
@@ -82,7 +82,6 @@
                     <div class="slider-dot"></div>
                     <div class="slider-dot"></div>
                 </div>
-
             </div>
 
         </div>

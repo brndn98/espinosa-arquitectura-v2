@@ -3,6 +3,9 @@ var navbarLogo = document.getElementById("navbar-logo-img");
 
 function scrollNavbar() {
 
+    /*console.log(navbar.offsetTop);
+    console.log(window.scrollY);*/
+
     if (window.scrollY > navbar.offsetTop) {
         navbar.classList.add("navbar-scroll");
         navbar.classList.remove("navbar-top");

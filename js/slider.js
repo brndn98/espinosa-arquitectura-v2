@@ -119,7 +119,7 @@ function slideInfoHide() { //function for hiding the information dialog when on 
 
 //+++++++++++++ I M A G E   L O A D I N G +++++++++++++//
 
-
+/*
 var loadedImages = [ //array with high quality images for the slides
     "images/slider/loaded/closeup_2019-04-14.jpg",
     "images/slider/loaded/casa_rios.jpg",
@@ -140,4 +140,11 @@ if (document.body.clientWidth < 1025) {
     slideImage[1].style.transform = "translateY(0)";
     slideImage[2].style.transform = "translateY(0)";
     slideImage[4].style.transform = "translateY(0)";
+}
+*/
+
+if (document.body.clientWidth >= 1025) {
+    slideImage[1].style.transform = "translateY(-18%)";
+    slideImage[2].style.transform = "translateY(-15%)";
+    slideImage[4].style.transform = "translateY(-18%)";
 }
