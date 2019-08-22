@@ -1,18 +1,3 @@
-:root{
-    --navbar-text: 'Lato';
-    --slider-header: 'Open Sans';
-    --slider-text: 'PT Sans';
-
-    --black-transparent: rgba(28, 28, 28, 0.3);
-    --black-contact: rgba(28, 28, 28, 0.98);
-    --black-profile-hover: rgba(28, 28, 28, 0.8);
-    --black-color: #1c1c1c;
-    --black-profile: #3f3f3f;
-    --white-color: #d6d6d6;
-    --gray-color: #8a8a8a;
-    --white-background: #e9e9e9;
-}
-
 /*////////////////////////////////////////////*/
 /*///////////// F O N T S ////////////////////*/
 /*////////////////////////////////////////////*/
@@ -78,6 +63,31 @@
     font-weight: 300;
     font-style: italic;
 }
+
+
+/*////////////////////////////////////////////*/
+/*/////////// V A R I A B L E S //////////////*/
+/*////////////////////////////////////////////*/
+
+:root{
+    --navbar-text: 'Lato';
+    --slider-header: 'Open Sans';
+    --slider-text: 'PT Sans';
+
+    --font-title: biko;
+    --font-sub: 'a pompadour';
+    --font-text: 'louis george cafe';
+
+    --black-transparent: rgba(28, 28, 28, 0.3);
+    --black-contact: rgba(28, 28, 28, 0.98);
+    --black-profile-hover: rgba(28, 28, 28, 0.8);
+    --black-color: #1c1c1c;
+    --black-profile: #3f3f3f;
+    --white-color: #d6d6d6;
+    --gray-color: #8a8a8a;
+    --white-background: #e9e9e9;
+}
+
 
 /*////////////////////////////////////////////*/
 /*///////////// S T Y L E //////////////////*/
@@ -167,7 +177,7 @@ body{
 .navbar-menu a{
     text-align: center;
     text-decoration: none;
-    font-family: var(--navbar-text);
+    font-family: var(--font-text);
     font-size: 10px;
     font-weight: 700;
     color: var(--black-color);
@@ -240,19 +250,19 @@ body{
     padding: 0;
     border-radius: 0;
     color: var(--white-color);
-    background-color: var(--black-transparent);
+    background-color: var(--black-profile-hover);
     opacity: 0;
     transition: 0.5s;
 }
 .slide-info-header{
     padding-left: 50px;
-    font-family: var(--slider-header);
+    font-family: var(--font-sub);
     font-size: 18px;
     /*font-style: italic;*/
 }
 .slide-info-text{
     padding-bottom: 40px;
-    font-family: var(--slider-text);
+    font-family: var(--font-text);
     font-size: 12px;
     margin: 40px;
     margin-top: 10px;
@@ -331,7 +341,7 @@ body{
     flex-flow: column nowrap;
 }
 .services-header-2 h1{
-    font-family: var(--navbar-text);
+    font-family: var(--font-title);
     font-size: 2em;
     font-weight: 700;
     color: var(--black-color);
@@ -341,12 +351,12 @@ body{
 }
 .services-header-2 p{
     width: 80%;
-    font-family: var(--navbar-text);
+    font-family: var(--font-sub);
     font-size: 0.9em;
     font-weight: 400;
     color: var(--black-color);
     margin: 5% 8%;
-    text-shadow: 0 1px 3px var(--gray-color);
+    /*text-shadow: 0 1px 3px var(--gray-color);*/
 }
 .services-header-2 a{
     width: 40%;
@@ -354,7 +364,7 @@ body{
     margin-top: 10%;
     padding: 10px 10px;
     text-align: center;
-    font-family: var(--navbar-text);
+    font-family: var(--font-text);
     font-size: 0.7em;
     letter-spacing: 1px;
     font-weight: 700;
@@ -377,7 +387,7 @@ body{
 .services-summary > h1{
     width: 90%;
     height: 10%;
-    font-family: var(--slider-header);
+    font-family: var(--font-title);
     font-size: 1.2em;
     font-weight: 300;
     color: var(--white-color);
@@ -395,15 +405,14 @@ body{
     opacity: 1;
 }
 .services-summary-service > h1{
-    font-family: var(--slider-header);
+    font-family: var(--font-sub);
     font-size: 1em;
     font-weight: 700;
-    letter-spacing: 1px;
     border-bottom: 1px solid var(--white-color);
     margin-bottom: 4%;
 }
 .services-summary-service > p{
-    font-family: var(--slider-header);
+    font-family: var(--font-text);
     font-size: 0.8em;
     font-weight: 400;
 }
@@ -419,7 +428,7 @@ body{
 }
 .services-header h1{
     width: 75%;
-    font-family: var(--slider-header);
+    font-family: var(--font-title);
     font-size: 1.2em;
     font-weight: 700;
     font-variant: small-caps;
@@ -450,7 +459,7 @@ body{
 }
 .presentation-info h1{
     margin-top: 0;
-    font-family: var(--slider-header);
+    font-family: var(--font-sub);
     font-size: 18px;
     font-weight: 400;
     font-variant: small-caps;
@@ -460,7 +469,7 @@ body{
 .presentation-info p{
     width: 85%;
     margin-top: 10%;
-    font-family: var(--slider-text);
+    font-family: var(--font-text);
     font-size: 14px;
     color: var(--black-color);
 }
@@ -501,13 +510,13 @@ body{
 }
 .construction-info h1{
     margin-bottom: 10%;
-    font-family: var(--slider-header);
+    font-family: var(--font-text);
     font-size: 16px;
     font-weight: 700;
     color: var(--black-color);
 }
 .construction-info p{
-    font-family: var(--navbar-text);
+    font-family: var(--font-text);
     font-size: 14px;
     font-weight: 400;
     color: var(--black-color);
@@ -552,13 +561,13 @@ body{
 }
 .architecture-info h1{
     margin-bottom: 10%;
-    font-family: var(--slider-header);
+    font-family: var(--font-text);
     font-size: 16px;
     font-weight: 700;
     color: var(--black-color);
 }
 .architecture-info p{
-    font-family: var(--navbar-text);
+    font-family: var(--font-text);
     font-size: 14px;
     font-weight: 400;
     color: var(--black-color);
@@ -621,7 +630,7 @@ body{
 
 .aboutus-content > h1{
     width: 80%;
-    font-family: var(--slider-header);
+    font-family: var(--font-sub);
     font-size: 1em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -667,7 +676,7 @@ body{
 }
 .profile-details p{
     width: 90%;
-    font-family: var(--navbar-text);
+    font-family: var(--font-text);
     font-size: 1em;
     font-weight: 400;
     color: var(--white-color);
@@ -681,13 +690,13 @@ body{
     border-radius: 50%;
 }
 .profile-details > h1{
-    font-family: var(--slider-text);
+    font-family: var(--font-title);
     font-size: 2em;
     font-weight: 400;
     color: var(--white-color);
 }
 .profile-details > p{
-    font-family: var(--slider-text);
+    font-family: var(--font-sub);
     font-size: 1em;
     font-weight: 300;
     color: var(--white-color);
@@ -711,7 +720,7 @@ body{
     transition: 0.5s;
 }
 .profile-info > h1{
-    font-family: var(--slider-text);
+    font-family: var(--font-text);
     font-size: 1.2em;
     font-weight: 400;
     font-style: italic;
@@ -719,9 +728,9 @@ body{
     margin-bottom: 5%;
 }
 .profile-info > p{
-    font-family: var(--slider-text);
+    font-family: var(--font-text);
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--white-color);
     margin: 0 8%;
 }
@@ -755,7 +764,7 @@ body{
     align-items: center;
 }
 .footer-content p{
-    font-family: var(--navbar-text);
+    font-family: var(--font-text);
     font-size: 12px;
     font-weight: 700;
     color: var(--white-color);
@@ -799,6 +808,9 @@ body{
     align-items: center;
     justify-content: center;
 }
+.full-footer-widget h1{
+    font-family: var(--font-sub);
+}
 .full-footer-logo{
     display: flex;
     justify-content: center;
@@ -815,14 +827,13 @@ body{
     /*padding-top: 4%;*/
 }
 .full-footer-aboutus h1{
-    font-family: var(--slider-header);
     font-size: 0.8em;
     font-weight: 700;
     color: var(--white-color);
     margin-bottom: 2%;
 }
 .full-footer-aboutus p{
-    font-family: var(--navbar-text);
+    font-family: var(--font-text);
     font-size: 0.8em;
     font-weight: 400;
     text-align: center;
@@ -835,7 +846,6 @@ body{
     /*justify-content: space-evenly;*/
 }
 .full-footer-info h1{
-    font-family: var(--slider-header);
     font-size: 0.8em;
     font-weight: 700;
     color: var(--white-color);
@@ -856,7 +866,7 @@ body{
     margin-bottom: 1%;
 }
 .full-footer-contact p{
-    font-family: var(--navbar-text);
+    font-family: var(--font-text);
     font-size: 0.8em;
     font-weight: 400;
     color: var(--gray-color);
@@ -906,7 +916,7 @@ body{
     margin-left: 0;
     text-align: center;
     text-decoration: none;
-    font-family: var(--navbar-text);
+    font-family: var(--font-text);
     font-size: 0.7em;
     font-weight: 700;
     color: var(--gray-color);
@@ -915,7 +925,7 @@ body{
     transition: 0.5s;
 }
 .full-footer-navbar p{
-    font-family: var(--navbar-text);
+    font-family: var(--font-text);
     font-size: 0.7em;
     font-weight: 400;
     color: var(--gray-color);
@@ -1614,7 +1624,7 @@ body{
         margin-bottom: 10%;
     }
     .services-summary-service > p{
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .services-header{
@@ -1649,7 +1659,7 @@ body{
         font-size: 24px;
     }
     .presentation-info p{
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .construction-br{
@@ -1677,10 +1687,10 @@ body{
     .construction-info h1{
         margin-bottom: 5%;
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 700;
     }
     .construction-info p{
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 400;
     }
 
@@ -1711,10 +1721,10 @@ body{
     .architecture-info h1{
         margin-bottom: 5%;
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 700;
     }
     .architecture-info p{
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 400;
     }
 
@@ -1800,7 +1810,7 @@ body{
         font-size: 1.2em;
     }
     .profile-info > p{
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .profile-br{
