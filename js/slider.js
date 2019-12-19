@@ -155,7 +155,6 @@ if (document.body.clientWidth < 1025) {
 */
 
 if (document.body.clientWidth >= 1025) {
-  slideImage[1].style.transform = "translateY(-16%)";
-  slideImage[2].style.transform = "translateY(-18%)";
-  slideImage[4].style.transform = "translateY(-16%)";
+  slideImage[2].style.transform = "translateY(-16%)";
+  slideImage[3].style.transform = "translateY(-18%)";
 }

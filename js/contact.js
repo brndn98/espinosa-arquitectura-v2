@@ -13,6 +13,8 @@ const inputSubmit = document.getElementById("contact-submit"); //handles the sub
 
 const searchAnswer = document.getElementsByTagName("h2"); //handles the text for the answer after submitting the form
 
+const formInputs = document.querySelectorAll("form-input");
+
 //VARIABLES
 const emailValidation = /^(.+){1,}@[\w\.\-_]{2,}[.][\w]{2,}/; //contains the RegEx for the e-mail validation
 // /^[\w\.\-_]{1,}@[\w\.\-]{6,}/;
@@ -23,6 +25,14 @@ inputSubmit.disabled = true; //disables the submit button when the page loaded
 disableInputs(); //enter the function to disable all the input fields
 
 /////////////// C O N T A C T   D I A L O G ////////////////
+
+if (document.body.clientWidth < 1025) {
+  formInputs.forEach(fInput => {
+    fInput.addEventListener("focus", function() {
+      fInput.scrollIntoView(false);
+    });
+  });
+}
 
 function openContact() {
   //function for showing the contact dialog
