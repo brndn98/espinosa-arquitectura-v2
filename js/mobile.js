@@ -1,4 +1,8 @@
-let vh = window.innerHeight * 0.01;
-let vhValue = vh + "px";
+setTimeout(fixHeight, 4000);
 
-document.documentElement.style.setProperty("--vh", vhValue);
+function fixHeight() {
+  let vh = window.innerHeight * 0.01;
+  let vhValue = vh + "px";
+
+  document.documentElement.style.setProperty("--vh", vhValue);
+}
