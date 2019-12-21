@@ -1,4 +1,4 @@
-setTimeout(fixHeight, 4000);
+setTimeout(fixHeight, 3000);
 
 function fixHeight() {
   let vh = window.innerHeight * 0.01;

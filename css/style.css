@@ -795,7 +795,7 @@ body {
 
 .new-footer {
   width: 100vw;
-  height: calc(var(--vh, 1vh) * 20);
+  height: calc(var(--vh, 1vh) * 25);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -804,7 +804,7 @@ body {
 }
 
 .new-footer-content {
-  width: 85%;
+  width: 90%;
   height: 90%;
   display: flex;
   flex-flow: row wrap;
@@ -1054,7 +1054,7 @@ body {
 
 .content-wrapper {
   width: 100%;
-  height: calc(var(--vh, 1vh) * 90);
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -1096,7 +1096,7 @@ body {
 
 .content-menu {
   position: absolute;
-  left: -40%;
+  left: -35%;
   z-index: 50;
   padding-top: 20px;
   width: calc(50% - 20px);
@@ -1104,8 +1104,9 @@ body {
   display: flex;
   flex-flow: column nowrap;
   border-right: 1px solid var(--white-color);
-  padding-left: 20px;
+  padding-left: 5px;
   background-color: var(--black-color);
+  transition: 0.2s;
 }
 .content-menu > * {
   padding: 5px 0;
@@ -1114,49 +1115,32 @@ body {
 .content-menu-item {
   text-decoration: none;
   font-family: var(--navbar-text);
-  font-size: 1em;
+  font-size: 0.7em;
   font-weight: 700;
   letter-spacing: 1px;
   color: var(--white-color);
-  opacity: 0.8;
-  transition: 0.2s;
-  cursor: pointer;
-}
-.option-active,
-.content-menu-option:hover,
-.content-menu-item:hover {
   opacity: 1;
 }
 
 .content-aboutus,
 .content-services,
 .content-team {
-  /*width: 100%;*/
-  height: 0;
+  height: 100px;
   margin-left: 10px;
   display: flex;
   flex-flow: column nowrap;
+  border-left: 1px solid var(--white-color);
   overflow-y: hidden;
-  transition: 0.5s;
 }
 .content-aboutus > a,
 .content-services > a,
 .content-team > a {
   padding: 5px 0;
   padding-left: 10px;
-  font-size: 0.9em;
-}
-.content-menu-option:hover + .content-aboutus,
-.content-aboutus:hover,
-.content-menu-option:hover + .content-services,
-.content-services:hover,
-.content-menu-item:hover + .content-team,
-.content-team:hover {
-  height: 100px;
-  border-left: 1px solid var(--white-color);
+  font-size: 0.6em;
 }
 .content-team > a {
-  font-size: 0.8em;
+  font-size: 0.5em;
 }
 
 .content-display {
@@ -1186,14 +1170,14 @@ body {
 }
 
 .content-slide-page {
-  width: 90%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .content-slide-profile {
-  width: 35%;
+  width: 100%;
   /*height: 95%;*/
   display: flex;
   flex-flow: column nowrap;
@@ -1201,7 +1185,7 @@ body {
   justify-content: center;
 }
 .content-slide-text {
-  width: 50%;
+  width: 95%;
   height: auto;
   /*background-color: var(--black-color);*/
   transition: 0.5s;
