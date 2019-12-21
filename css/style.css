@@ -1129,7 +1129,7 @@ body {
   position: absolute;
   left: -35%;
   z-index: 50;
-  padding-top: 20px;
+  padding-top: 25px;
   width: calc(50% - 20px);
   height: 90%;
   display: flex;
@@ -2134,7 +2134,13 @@ body {
     border-bottom: 1px solid var(--white-color);
   }
 
+  #content-close {
+    display: none;
+  }
+
   .content-menu {
+    position: initial;
+    left: initial;
     padding-top: 20px;
     width: calc(20% - 20px);
     height: 80%;
@@ -2172,6 +2178,7 @@ body {
     margin-left: 10px;
     display: flex;
     flex-flow: column nowrap;
+    border-left: hidden;
     overflow-y: hidden;
     transition: 0.5s;
   }
