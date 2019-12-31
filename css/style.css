@@ -516,7 +516,6 @@ body {
     ". con2 con2 con2 .";
   justify-content: space-evenly;
 }
-
 .construction-info {
   grid-area: conInfo;
 }
@@ -535,19 +534,33 @@ body {
     "arc1 . arc3";
   justify-content: space-evenly;
 }
-
 .architecture-info {
   grid-area: arcInfo;
 }
 
-.construction-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  opacity: 0.8;
+.services-visual {
+  margin-top: 0;
+  /*padding: 5% 0;*/
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 32% 3% 65%;
+  grid-template-rows: 30% 2% 35% 2% 30%;
+  grid-template-areas:
+    "vis1 vis1 vis1"
+    ". . ."
+    "visInfo visInfo visInfo"
+    ". . ."
+    "vis2 vis2 vis2";
+  justify-content: space-evenly;
+}
+.visual-info {
+  grid-area: visInfo;
 }
 
-.architecture-img {
+.construction-img,
+.architecture-img,
+.visual-img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -555,14 +568,16 @@ body {
 }
 
 .architecture-info,
-.construction-info {
+.construction-info,
+.visual-info {
   padding: 2% 5%;
   opacity: 1;
   transition: opacity 0.5s;
   background-color: var(--black-top);
 }
 .architecture-info h1,
-.construction-info h1 {
+.construction-info h1,
+.visual-info h1 {
   margin-bottom: 5%;
   font-family: var(--font-title);
   font-size: 1em;
@@ -573,7 +588,8 @@ body {
   text-align: end;
 }
 .architecture-info p,
-.construction-info p {
+.construction-info p,
+.visual-info p {
   font-family: var(--font-text);
   font-size: 0.8em;
   font-weight: 400;
@@ -699,22 +715,22 @@ body {
   align-items: center;
 }
 .profile-img {
-  width: 35%;
-  padding-top: 35%;
+  width: 22%;
+  padding-top: 22%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   /*border-radius: 50%;*/
 }
 .profile-information {
-  width: 55%;
+  width: 65%;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
 }
 .profile-information > h1 {
-  margin-top: 10%;
+  margin-top: 5%;
   font-family: var(--font-title);
   font-size: 1.1em;
   font-weight: 400;
@@ -727,7 +743,7 @@ body {
   /*text-align: end;*/
 }
 .profile-about {
-  width: 90%;
+  width: 95%;
   margin-bottom: 5%;
   display: flex;
   flex-flow: column nowrap;
@@ -767,6 +783,7 @@ body {
   flex-flow: row nowrap;
   align-items: center;
   margin-bottom: 2%;
+  text-decoration: none;
 }
 
 .profile-info {
@@ -1209,7 +1226,7 @@ body {
   justify-content: center;
 }
 .content-slide-profile {
-  width: 100%;
+  width: 115%;
   /*height: 95%;*/
   display: flex;
   flex-flow: column nowrap;
@@ -1842,13 +1859,6 @@ body {
       ". . . . ."
       ". conInfo conInfo con4 .";
   }
-
-  .architecture-br {
-    margin-top: 10%;
-    height: calc(var(--vh, 1vh) * 65);
-    background-position: 50% 80%;
-  }
-
   .services-architecture {
     margin-top: 0;
     padding: 5% 0;
@@ -1860,18 +1870,31 @@ body {
       ". arc1 arcInfo arcInfo ."
       ". arc1 . . ."
       ". arc1 arc2 arc3 .";
-    /*background-color: var(--black-top);*/
+  }
+  .services-visual {
+    margin-top: 0;
+    padding: 5% 0;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 0% 30% 30% 30% 0%;
+    grid-template-rows: 48% 4% 48%;
+    grid-template-areas:
+      ". visInfo visInfo vis1 ."
+      ". . . . ."
+      ". vis2 vis2 vis3 .";
   }
 
   .architecture-info,
-  .construction-info {
+  .construction-info,
+  .visual-info {
     padding: 2% 5%;
     opacity: 1;
     transition: opacity 0.5s;
     background-color: var(--black-top);
   }
   .architecture-info h1,
-  .construction-info h1 {
+  .construction-info h1,
+  .visual-info h1 {
     margin-bottom: 5%;
     font-family: var(--font-title);
     font-size: 1.3em;
@@ -1882,7 +1905,8 @@ body {
     text-align: end;
   }
   .architecture-info p,
-  .construction-info p {
+  .construction-info p,
+  .visual-info p {
     font-size: 1em;
     font-weight: 400;
     color: var(--white-color);
@@ -1939,6 +1963,10 @@ body {
     transform: scaleY(1);
   }
 
+  .profile-details i {
+    width: 5%;
+  }
+
   .profile-details {
     width: 98%;
     /*height: 98%;*/
@@ -1955,27 +1983,27 @@ body {
   .profile-person {
     margin: 2% 0;
     width: 100%;
-    height: 28%;
+    height: 10%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
   }
   .profile-img {
-    width: 35%;
+    width: 20%;
     height: unset;
-    padding-top: 35%;
+    padding-top: 20%;
     /*border-radius: 50%;*/
   }
   .profile-information {
-    width: 55%;
+    width: 70%;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
   }
   .profile-information > h1 {
-    margin-top: 10%;
+    margin-top: 5%;
     font-family: var(--font-title);
     font-size: 1.5em;
     font-weight: 400;
@@ -1989,7 +2017,7 @@ body {
   }
   .profile-about {
     width: 90%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     display: flex;
     flex-flow: column nowrap;
   }
@@ -1998,7 +2026,7 @@ body {
     font-size: 0.9em;
     font-weight: 700;
     color: var(--white-color);
-    margin-top: 3%;
+    margin-top: 2%;
   }
   .profile-about > p {
     width: unset;
@@ -2008,7 +2036,7 @@ body {
   }
   .profile-social {
     width: 90%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
   }
   .profile-info {
     width: 50%;
@@ -2237,7 +2265,7 @@ body {
     justify-content: center;
   }
   .content-slide-profile {
-    width: 35%;
+    width: 50%;
     /*height: 95%;*/
     display: flex;
     flex-flow: column nowrap;
