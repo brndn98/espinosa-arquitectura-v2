@@ -960,6 +960,74 @@ body {
 }
 
 /*########################################################################*/
+/*########################### T A B L E T ################################*/
+/*########################################################################*/
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    height: 80px;
+    flex-flow: row nowrap;
+  }
+  .navbar-scroll {
+    height: 50px;
+  }
+  .navbar-scroll .navbar-logo {
+    display: flex;
+  }
+
+  .navbar-logo {
+    width: 50%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+  #navbar-logo-img {
+    margin-left: 20%;
+  }
+
+  .navbar-menu {
+    width: 50%;
+    height: 100%;
+  }
+  .navbar-menu a {
+    font-size: 13px;
+  }
+
+  /*++++++++++++++++++++++++++++++++++++++++++++*/
+  /*++++++++++++++ S L I D E R +++++++++++++++++*/
+  /*++++++++++++++++++++++++++++++++++++++++++++*/
+
+  .slider-wrapper {
+    height: calc((var(--vh, 1vh) * 100) - 40px);
+  }
+
+  .slide-info-header {
+    padding-left: 100px;
+    font-size: 30px;
+  }
+  .slide-info-text {
+    padding-bottom: 40px;
+    font-size: 20px;
+    margin: 10%;
+    margin-top: 5%;
+  }
+
+  #id-slider-prev,
+  #id-slider-next {
+    font-size: 40px;
+  }
+  .slider-dots {
+    width: 30%;
+    height: 20px;
+    bottom: 2%;
+    left: 35%;
+  }
+  .slider-dot {
+    width: 20px;
+    height: 100%;
+  }
+}
+
+/*########################################################################*/
 /*########################## D E S K T O P ###############################*/
 /*########################################################################*/
 
