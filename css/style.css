@@ -417,7 +417,7 @@ body {
 /*++++++++++++++++++++++++++++++++++++++++++++*/
 
 .profile-details {
-  width: 100%;
+  width: 98%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -425,7 +425,7 @@ body {
   background-color: var(--black-top);
 }
 .profile-details p {
-  width: 90%;
+  width: 100%;
   font-family: var(--font-text);
   font-size: 0.8em;
   font-weight: 400;
