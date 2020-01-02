@@ -1104,9 +1104,9 @@ body {
     grid-template-columns: 0% 30% 30% 30% 0%;
     grid-template-rows: 48% 4% 48%;
     grid-template-areas:
-      ". visInfo visInfo vis1 ."
-      ". . . . ."
-      ". vis2 vis2 vis3 .";
+      ". visInfo visInfo vis3 ."
+      ". . . vis3 ."
+      ". vis2 vis1 vis3 .";
   }
 
   .architecture-info h1,
