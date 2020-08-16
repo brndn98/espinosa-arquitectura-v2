@@ -5,7 +5,7 @@ const sliderSlides = document.querySelector(".slider-slide"); //handles the enti
 const sliderImages = document.getElementsByClassName("slide"); //handles the slide div, to know the amount of slides in the slider
 const slideImage = document.getElementsByClassName("slide-img"); //handles the image inside the slide, for image loading and image positioning
 const sliderDots = document.querySelectorAll(".slider-dot"); //handles the slider dots, for styling and functionality
-const slideInfo = document.getElementsByClassName("slide-info"); //handles the information dialog for each slide
+const slideInfo = document.querySelectorAll(".slide-info"); //handles the information dialog for each slide
 
 const sliderPrev = document.getElementById("id-slider-prev"); //handles the next button on the slider
 const sliderNext = document.getElementById("id-slider-next"); //handles the previous button on the slider
@@ -14,6 +14,7 @@ const sliderNext = document.getElementById("id-slider-next"); //handles the prev
 let sliderCounter = 1; //index for the slide active on the slider
 let sliderSize = sliderImages[0].clientWidth; //size of each slide on the slider
 let slideInfoFlag = false; //flag for the information dialog
+let sliderAutoFlag = true; //flag for the automatic sliding
 
 //sets slider to start with slideCounter, hence slide 1
 sliderSlides.style.transform =
@@ -25,7 +26,7 @@ sliderDots[0].style.opacity = "0.75"; //sets the first dot as active
 
 // S L I D E S //
 
-function sliderNextSlide() {
+function sliderNextSlide(isAutomatic) {
   //function for showing the next slide
 
   if (sliderCounter < sliderImages.length - 1) {
@@ -35,10 +36,14 @@ function sliderNextSlide() {
     sliderSlides.style.transform =
       "translateX(" + -sliderSize * sliderCounter + "px)"; //transform the slider to translate the left
   }
+  // TEST //
+  if (!isAutomatic) {
+    resetSliderInterval();
+  }
 
   slideInfoHide(); //enter the funcion to hide the information dialog
 }
-function sliderPrevSlide() {
+function sliderPrevSlide(isAutomatic) {
   //function for showing the previous slide
 
   if (sliderCounter > 0) {
@@ -47,6 +52,10 @@ function sliderPrevSlide() {
     sliderCounter--; //decrement the index
     sliderSlides.style.transform =
       "translateX(" + -sliderSize * sliderCounter + "px)"; //translate the slides to the right
+  }
+  // TEST //
+  if (!isAutomatic) {
+    resetSliderInterval();
   }
 
   slideInfoHide(); //enter the funcion to hide the information dialog
@@ -70,6 +79,24 @@ sliderSlides.addEventListener("transitionend", () => {
 
   sliderActualDot(); //enter the function to place the active dot
 });
+// Automatic Slider
+//let sliderInterval = setInterval(sliderNextSlide, 5000);
+let sliderInterval = setInterval(function () {
+  if (sliderAutoFlag) {
+    sliderNextSlide(true);
+  }
+}, 5000);
+function resetSliderInterval() {
+  clearInterval(sliderInterval);
+  //waits for five seconds then resets the interval
+  //setTimeout(function () {
+  sliderInterval = setInterval(function () {
+    if (sliderAutoFlag) {
+      sliderNextSlide(true);
+    }
+  }, 5000);
+  //}, 5000);
+}
 
 // D O T S //
 
@@ -86,13 +113,14 @@ function sliderActualDot() {
 sliderDots.forEach((dot, dotIndex) => {
   //function for making dots clickable
 
-  dot.addEventListener("click", function() {
+  dot.addEventListener("click", function () {
     //add the onclick event to each dot in the slider
 
     sliderSlides.style.transition = "transform 0.4s ease-in-out"; //apply transition
     sliderCounter = dotIndex + 1; //set index to the dot corresponding slide
     sliderSlides.style.transform =
       "translateX(" + -sliderSize * sliderCounter + "px)"; //translate the slides
+    resetSliderInterval();
   });
 });
 
@@ -127,6 +155,16 @@ function slideInfoHide() {
     }
   }
 }
+//Handles the automatic slider when hovering on the slide info dialog
+slideInfo.forEach((info) => {
+  info.addEventListener("mouseenter", function () {
+    sliderAutoFlag = false;
+  });
+  info.addEventListener("mouseleave", function () {
+    sliderAutoFlag = true;
+    resetSliderInterval();
+  });
+});
 
 //+++++++++++++ I M A G E   L O A D I N G +++++++++++++//
 
@@ -155,6 +193,7 @@ if (document.body.clientWidth < 1025) {
 */
 
 if (document.body.clientWidth >= 1025) {
-  slideImage[2].style.transform = "translateY(-16%)";
-  slideImage[3].style.transform = "translateY(-18%)";
+  slideImage[1].style.transform = "translateY(-16%)";
+  slideImage[2].style.transform = "translateY(-18%)";
+  slideImage[5].style.transform = "translateY(-16%)";
 }

@@ -1203,11 +1203,11 @@ body {
     width: 5%;
   }
   .profile-img {
-    width: 20%;
-    padding-top: 20%;
+    width: 16%;
+    padding-top: 16%;
   }
   .profile-information {
-    width: 70%;
+    width: 75%;
   }
   .profile-information > h1 {
     font-size: 1.5em;
@@ -1315,7 +1315,7 @@ body {
     height: 70%;
   }
   .content-slide-profile {
-    width: 50%;
+    width: 60%;
   }
   .content-slide-text {
     width: 50%;
